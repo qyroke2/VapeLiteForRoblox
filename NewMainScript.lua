@@ -29,7 +29,7 @@ end
 local gameCamera = workspace.CurrentCamera
 local lplr = playersService.LocalPlayer
 
-local LiteLiteVapeEvents = setmetatable({}, {
+local LiteVapeEvents = setmetatable({}, {
 	__index = function(self, index)
 		self[index] = Instance.new('BindableEvent')
 		return self[index]
